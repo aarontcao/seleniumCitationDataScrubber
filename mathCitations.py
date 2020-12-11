@@ -22,7 +22,7 @@ ws.write(0, 7, "WoS Classificataion")
 
 #creates the webdriver that points to MathSciNet
 driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
-driver.get("https://mathscinet-ams-org.libezp.lib.lsu.edu/mathscinet/search/publications.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&extend=1&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&review_format=html&s4=&s5=&s6=&s7=%22FEATURED%20REVIEW%22&s8=Journals&sort=Newest&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq&r=901")
+driver.get(url)
 
 #a redirection to a LSU login site occurs, so point the webdriver to it
 #window_handles is a list of the tabs in the browser, [0] is the leftmost tab

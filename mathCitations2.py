@@ -15,7 +15,7 @@ ws2 = wb2.add_sheet("Sheet 1")
 
 # creates the webdriver that points to MathSciNet
 driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
-driver.get("https://mathscinet-ams-org.libezp.lib.lsu.edu/mathscinet/index.html")
+driver.get(url)
 
 # a redirection to a LSU login site occurs, so point the webdriver to it
 # window_handles is a list of the tabs in the browser, [0] is the leftmost tab
