@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 #creates the webdriver that points to WebOfScience
 driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
-driver.get("http://apps.webofknowledge.com.libezp.lib.lsu.edu/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=6Bgyo1mxBIsY9gH4KR5&preferencesSaved=")
+driver.get(url)
 
 #a redirection to a LSU login site occurs, so point the webdriver to it
 #window_handles is a list of the tabs in the browser, [0] is the leftmost tab
